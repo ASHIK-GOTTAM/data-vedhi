@@ -1,0 +1,17 @@
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+# Get temperature in Celsius and convert to Fahrenheit
+temp_c = float(input("Enter temperature in Celsius: "))
+print(f"{temp_c}°C is {celsius_to_fahrenheit(temp_c)}°F")
+
+# Get temperature in Fahrenheit and convert to Celsius
+temp_f = float(input("Enter temperature in Fahrenheit: "))
+print(f"{temp_f}°F is {fahrenheit_to_celsius(temp_f)}°C")
+
+EXPLANATION:
+1.This program defines two functions to convert temperatures: one for converting Celsius to Fahrenheit and another for the reverse. 
+2.The user is prompted to enter temperatures in both scales, and the program outputs the converted values.
