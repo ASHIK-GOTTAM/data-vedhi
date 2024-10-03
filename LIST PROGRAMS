@@ -1,0 +1,39 @@
+# Function to create a list
+def create_list():
+    return []
+
+# Function to append an item to the list
+def append_to_list(lst, item):
+    lst.append(item)
+    print(f"Item '{item}' appended. Current list: {lst}")
+
+# Function to remove an item from the list
+def remove_from_list(lst, item):
+    try:
+        lst.remove(item)
+        print(f"Item '{item}' removed. Current list: {lst}")
+    except ValueError:
+        print(f"Item '{item}' not found in the list.")
+
+# Main program
+if __name__ == "__main__":
+    my_list = create_list()  # Create an empty list
+    append_to_list(my_list, "apple")  # Append 'apple'
+    append_to_list(my_list, "banana")  # Append 'banana'
+    append_to_list(my_list, "cherry")  # Append 'cherry'
+
+    # Remove an item
+    remove_from_list(my_list, "banana")  # Remove 'banana'
+    remove_from_list(my_list, "orange")   # Try to remove an item that doesn't exist
+
+    # Final list state
+    print(f"Final list: {my_list}")
+
+
+
+
+EXPLANATION:
+1.Creating a List: The create_list function initializes an empty list.
+2.Appending to the List: The append_to_list function adds an item to the list and prints the current state of the list.
+3.Removing from the List: The remove_from_list function attempts to remove an item from the list and handles the case where the item does not exist.
+Main Program: In the main block, we create a list, append some items, and then remove one of them while also trying to remove an item that isn't present.
